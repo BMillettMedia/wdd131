@@ -55,3 +55,6 @@ hr {
 .dark h2{
     color:#00A1DB;
 }
+.dark * {
+    background-color: #333;
+}
