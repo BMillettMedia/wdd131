@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #473144;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #AF1B3F;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #AF1B3F;
+}
+
+/* Header Styles */
+header {
+    background-color: #473144;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #AF1B3F;
+    border-bottom: 2px solid #AF1B3F;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    margin: 0 10px;
+}
+
+.main-nav a {
+    color: #EFC69B;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 3;
+}
+
+article header {
+    margin-bottom: 20px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+article p {
+    margin: 0;
+}
+
+/* Skip to Content Link for Accessibility */
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #AF1B3F;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.skiptocontent a:focus {
+    top: 0;
+}
+
+/* Aside Styles */
+aside {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.filter select {
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #473144;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #EFC69B;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
