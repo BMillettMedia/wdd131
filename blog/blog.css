@@ -69,6 +69,8 @@ main {
     justify-content: center;
     padding: 20px;
     gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 article {
@@ -77,17 +79,36 @@ article {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     flex: 3;
+    margin-bottom: 20px;
 }
 
 article header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 20px;
 }
 
+article .article-details {
+    text-align: right;
+    margin-right: 20px;
+    border-right: 2px solid #ddd;
+    padding-right: 20px;
+}
+
+article .article-details p {
+    margin: 5px 0;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
 article img {
-    width: 100%;
-    height: auto;
     display: block;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+    width: 100px;
+    height: auto;
 }
 
 article p {
