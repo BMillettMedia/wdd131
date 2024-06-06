@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+section {
+    grid-column: span 2;
+}
+
+button {
+    grid-column: span 2;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.hide {
+    display: none;
+}
