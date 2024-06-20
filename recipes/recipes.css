@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: "Amatic SC";
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+    background-color: var(--text-light);
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    max-width: 50px;
+}
+
+header h1 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    font-size: 2.5em;
+}
+
+form#search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form#search-form input,
+form#search-form button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+}
+
+.recipe-card {
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.recipe-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.recipe-card h2 {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.rating {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.description {
+    display: none;
+    font-size: 1em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.6em;
+}
+
+.social img {
+    max-width: 30px;
+    margin: 5px;
+}
+
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .recipe-card {
+        width: 48%;
+    }
+
+    .description {
+        display: block;
+    }
+}
+
+@media (min-width: 960px) {
+    main {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .recipe-card {
+        width: 31%;
+    }
+}
