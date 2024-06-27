@@ -1,4 +1,4 @@
-export const recipes = [
+const recipes = [
     {
         id: 1,
         title: 'Spaghetti Carbonara',
@@ -22,3 +22,5 @@ export const recipes = [
     }
     // Add more recipes as needed
 ];
+
+export default recipes;
