@@ -1,0 +1,132 @@
+/* CSS Document */
+html {
+    background-color: #fff;
+  }
+  
+  :root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #396e94;
+    --secondary-color: #f6aa1c;
+    --accent1-color: #841c26;
+    --accent2-color: #fff;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: Josefin Sans;
+    --paragraph-font: robato, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: var(
+      --primary-color
+    ); /* headlines on a white background */
+    --headline-color-on-color: white; /* headlines on a colored background */
+    --paragraph-color-on-white: var(
+      --primary-color
+    ); /* paragraph text on a white background */
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */
+    --paragraph-background-color: var(--primary-color);
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--primary-color);
+  }
+  
+  body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    color: var(--text-light);
+    background-color: var(--dark-bg); /* Use the updated dark background color */
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:link,
+  a:visited {
+    color: var(--text-light);
+  }
+  
+  header {
+    background-image: url('HorizontalBanding.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1em;
+    text-align: center;
+  }
+  /*headers*/
+  h1 {
+    margin-bottom: 0.5em;
+    font-size: 75px;
+    color:#52489c;
+  }
+  h2{
+    margin-bottom: 0.5em;
+    font-size: 45px;
+  }
+  /**/
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav li {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  nav li:hover {
+    background-color: var(--primary-color);
+    padding: 25px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 1em;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  main {
+    padding: 1em;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1em;
+  }
+  
+  figure {
+    margin: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  #menu-button {
+    display: none;
+  }
+  
+  /* Classes */
+  #content-site {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  #content-site img {
+    margin-right: 20px; /* Adjust spacing between image and heading */
+  }
+  
+  #content-site h2 {
+    float: left; /* Ensure h2 is to the right of the img */
+  }
+  
