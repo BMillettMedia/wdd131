@@ -38,5 +38,4 @@ function closePopup() {
   }
 }
 
-// Launch the pop-up ad after a delay (e.g., 5 seconds)
-setTimeout(launchRandomPopup, 5000);
+
