@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* CSS Document */
 html {
     background-color: #fff;
@@ -57,34 +61,67 @@ html {
     text-align: center;
   }
   /*headers*/
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
   h1 {
     margin-bottom: 0.5em;
     font-size: 75px;
-    color:#52489c;
   }
   h2{
     margin-bottom: 0.5em;
     font-size: 45px;
   }
   /**/
+  nav {
+    background-color: var(--primary-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    color:#fff;
+  }
+
+
+
   nav ul {
     list-style-type: none;
     padding: 0;
   }
   
+  nav a {
+    padding: 1em;
+    min-width: 120px;
+    text-decoration: none;
+    font-family: Josefin Sans;
+  }
+
   nav li {
     padding-left: 25px;
     padding-right: 25px;
   }
   
   nav li:hover {
-    background-color: var(--primary-color);
-    padding: 25px;
+    background-color: var(--nav-background-color);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+    border-radius: 15px;
   }
   
   nav ul li {
     display: inline;
     margin-right: 1em;
+    font-family: Josefin Sans;
   }
   
   nav ul li:last-child {
@@ -108,14 +145,31 @@ html {
   
   img {
     max-width: 100%;
-    height: 250px;
+    height: 500px;
     object-fit: cover;
   }
   
+  video {
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
   #menu-button {
     display: none;
   }
   
+footer p{
+    color: white;
+}
+
+div{
+    margin-left: 50px;
+    max-width: 1500px;
+    min-width: 1000px;
+}
+
+
   /* Classes */
   #content-site {
     display: flex;
@@ -128,5 +182,56 @@ html {
   
   #content-site h2 {
     float: left; /* Ensure h2 is to the right of the img */
+  }
+  
+  #sampleWork p {
+    float: left;
+  }
+
+ #close-popup{
+    background-color: red;
+ }
+
+ /*Broken code to fix later*/
+
+    /*#copyright {
+    margin-top: 500px;
+ }  Not targeting copyrignt content in footer**/
+
+ /*Javascript spefici*/
+ /* Style for the pop-up ad background */
+ 
+.popup-ad /*:not(div)*/{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Style for the pop-up ad image */
+  .popup-ad img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+  }
+  
+  /* Style for the close button */
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1001;
   }
   
