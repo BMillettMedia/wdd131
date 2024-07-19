@@ -9,15 +9,20 @@ const images = [
 function launchRandomPopup() {
   const chance = Math.random(); // Random number between 0 and 1
 
-  // 25% chance of no pop-up, 75% chance of showing one of the images
-  if (chance < 0.25) {
-    return; // No pop-up
+  // Determine the action based on the random number
+  if (chance < 0.1) {
+    return; // 10% chance of no pop-up
+  } else if (chance < 0.4) {
+    displayPopup(images[0]); // 30% chance for ad 1
+  } else if (chance < 0.7) {
+    displayPopup(images[1]); // 30% chance for ad 2
+  } else {
+    displayPopup(images[2]); // 30% chance for ad 3
   }
+}
 
-  // Select a random image from the array
-  const randomIndex = Math.floor(Math.random() * images.length);
-  const selectedImage = images[randomIndex];
-
+// Function to create and display the pop-up
+function displayPopup(selectedImage) {
   // Create and display the pop-up
   const popupHTML = `
     <div class="popup-ad">
@@ -38,4 +43,5 @@ function closePopup() {
   }
 }
 
-
+// Call the function to launch the pop-up ad
+launchRandomPopup();
